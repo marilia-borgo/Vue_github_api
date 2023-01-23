@@ -30,5 +30,10 @@ export const api = {
         const url = `https://api.github.com/repos/${owner}/${name}/issues?page=${page}`
         const response = await fetch(url)
         return await response.json()
+    },
+    async listaConteudoRoot(owner, name) {
+        const url = `https://api.github.com/repos/${owner}/${name}/contents`
+        const response = await fetch(url)
+        return await response.json()
     }
 }
