@@ -7,7 +7,7 @@ O requisitos básicos do site são:
 - [x] Clicando numa pasta, ele mostra o conteudo dessa pasta, mostrando no topo da tela o caminho da pasta que o usuario está
 
 Os requisitos não obrigatórios (vou marcando como concluído com o andar da carruagem):
-- [ ] Deixar a tela bonitona, com ícones diferentes pra pastas e arquivos)
+- [x] Deixar a tela bonitona, com ícones diferentes pra pastas e arquivos)
 - [ ] Abrir as pastas na forma de árvore (ao invés de clicar "recarregando" o conteudo da pasta)
 - [ ] Mostrar indicadores de loading contextuais (por exemplo, se vc tem uma árvore e o usuário clica pra expandir, vc tem uma animação loading do ladinho ali do item que tá sendo expandido)
 - [ ] Popup mostrando o conteúdo de arquivos
