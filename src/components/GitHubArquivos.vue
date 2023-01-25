@@ -25,8 +25,8 @@
             <template v-slot:default>
               <thead>
                 <tr>
-                  <th class="text-left">Repository Arquivos</th>
-                  <th class="text-left">Link to arquivo</th>
+                  <th class="text-left">Nome do Arquivo</th>
+                  <th class="text-left">Link para o arquivo</th>
                 </tr>
               </thead>
               <tbody>
