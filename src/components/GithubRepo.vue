@@ -4,11 +4,13 @@
       <v-col cols="6">
         <v-autocomplete
         v-model="user"
-        label="Encontre seu usuário"
+        label="Pesquise o usuário"
         :items="userlist"
         :loading="userloading"
         :search-input.sync="usersearch"
         item-text="login"
+        solo
+        clearable
       />
       </v-col>
       <v-col cols="6">
@@ -17,9 +19,11 @@
           :items="repolist"
           :loading="repoloading"
           item-text="name"
-          label="Selecione o repositorio"
+          label="Selecione o repositório"
           return-object
           single-line
+          solo
+          clearable
         ></v-select>
       </v-col>
     </v-row>

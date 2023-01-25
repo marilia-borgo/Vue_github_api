@@ -1,7 +1,23 @@
 <template>
       <div class="listArquivos">
-        <h1> Listar os arquivos do repositório</h1>
-        <div>{{ currentPath }}</div>
+        <v-banner two-line>
+    <v-avatar
+      slot="icon"
+      color="deep-purple lighten-2"
+      size="40"
+    >
+      <v-icon
+        color="white"
+      >
+      mdi-file-multiple
+      </v-icon>
+    </v-avatar>
+    Caminho:
+    <div v-if="currentPath">{{ currentPath }}</div>
+    <div v-else>root</div>
+    <template v-slot:actions>
+    </template>
+  </v-banner>
         <v-row>
           <v-col cols="12">
             <template>
@@ -18,7 +34,7 @@
                   <td class="text-left" v-if="content.type == 'dir'">
                     <v-btn
                       x-small
-                      color="primary"
+                      color="deep-purple lighten-2"
                       @click="listaConteudoInside(content.path)"
                     >
                       {{ content.name }}
@@ -36,7 +52,7 @@
         <v-row>
           <v-col cols="12">
 
-            <v-progress-circular indeterminate color="primary" v-if="loading"></v-progress-circular>
+            <v-progress-circular indeterminate color="deep-purple lighten-2" v-if="loading"></v-progress-circular>
             <v-btn v-if="arquivosInside.length > 0" class="mb-5" @click="voltarPasta()">
             Voltar
           </v-btn>
